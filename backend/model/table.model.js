@@ -12,8 +12,8 @@ const tableschema = new Schema({
 });
 const tableModel = mongoose.model("table", tableschema);
 //  let carda = {
-//      numTable: "tablea",
-//       isBusy: "true"
+//      numTable: 12,
+//       isBusy: "false"
 
 // } 
 //   tableModel.create(carda)

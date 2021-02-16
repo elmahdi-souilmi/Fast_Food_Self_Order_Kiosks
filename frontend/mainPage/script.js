@@ -95,6 +95,6 @@ function addCommand(name, price) {
 
 }
 
-function bubmitCommand() {
+function submitCommand() {
   
 }

@@ -5,4 +5,7 @@ const Command = require('../controller/Command');
 router.post('/', (req, res) => {
     Command.Addcommand(req, res)
 });
+router.get('/:NumCommande', (req, res) => {
+    Command.getCommandById(req, res)
+});
 module.exports = router;

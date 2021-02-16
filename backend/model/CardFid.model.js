@@ -2,19 +2,13 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const card = new Schema({
     CodeCard: {
-        type: Number,
+        type: String,
         required: true,
     },
     points: {
-        type: String,
+        type: Number,
         required: true,
-    },
-    name: {
-        type: String,
-        required: true,
-    },
+    }
 });
- 
-const cardModel = mongoose.model("Card", card); 
+const cardModel = mongoose.model("Card", card);
 module.exports = cardModel;
- 
