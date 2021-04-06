@@ -19,8 +19,9 @@ const sendHttpRequest = (method, url, data) => {
 const getcategories = () => {
 
     sendHttpRequest('GET', 'http://localhost:2021/category').then(responseData => {
-        console.log(responseData[0]);
-        console.log(responseData[0].SubCAt[0])
+        console.log("Hi I'm Here")
+        console.log(responseData);
+        // console.log(responseData[0].SubCAt[0])
         let html = '';
         for (let i = 0; i < responseData.length; i++) {
             html += ` <li class = "nav-item dropdown" >
